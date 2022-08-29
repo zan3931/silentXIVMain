@@ -1,0 +1,599 @@
+-- Silent XIV
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Creds = Instance.new("TextButton")
+local Set = Instance.new("TextButton")
+local Upd = Instance.new("TextButton")
+local Page2 = Instance.new("Frame")
+local god = Instance.new("TextButton")
+local Aimlock = Instance.new("TextButton")
+local Teleport = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Anims = Instance.new("TextButton")
+local Anims_2 = Instance.new("TextButton")
+local Page3 = Instance.new("Frame")
+local Released = Instance.new("TextLabel")
+local Released_2 = Instance.new("TextLabel")
+local Page1 = Instance.new("Frame")
+local CREDITS = Instance.new("TextLabel")
+local elon = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Main.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.238611713, 0, 0.216995448, 0)
+Main.Size = UDim2.new(0, 335, 0, 236)
+Main.Draggable = true
+Main.Active = true
+
+Creds.Name = "Creds"
+Creds.Parent = Main
+Creds.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Creds.BorderColor3 = Color3.fromRGB(43, 43, 43)
+Creds.BorderSizePixel = 2
+Creds.Position = UDim2.new(0, 0, 0.139987305, 0)
+Creds.Size = UDim2.new(0, 84, 0, 37)
+Creds.Font = Enum.Font.Merriweather
+Creds.Text = "Credits"
+Creds.TextColor3 = Color3.fromRGB(255, 255, 255)
+Creds.TextSize = 17.000
+Creds.TextWrapped = true
+Creds.MouseButton1Down:Connect(function()
+	local function WXMXOCX_fake_script() -- Creds.Script 
+		local script = Instance.new('Script', Creds)
+
+		script.Parent.Parent.Page3.Visible = false
+		script.Parent.Parent.Page2.Visible = false
+		script.Parent.Parent.Page1.Visible = true
+
+	end
+	coroutine.wrap(WXMXOCX_fake_script)()
+end)
+
+Set.Name = "Set"
+Set.Parent = Main
+Set.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Set.BorderColor3 = Color3.fromRGB(43, 43, 43)
+Set.BorderSizePixel = 2
+Set.Position = UDim2.new(0, 0, 0.343377143, 0)
+Set.Size = UDim2.new(0, 84, 0, 37)
+Set.Font = Enum.Font.Merriweather
+Set.Text = "Main"
+Set.TextColor3 = Color3.fromRGB(255, 255, 255)
+Set.TextSize = 20.000
+Set.MouseButton1Down:Connect(function()
+	local function CHOSW_fake_script() -- Set.Script 
+		local script = Instance.new('Script', Set)
+
+		script.Parent.Parent.Page3.Visible = false
+		script.Parent.Parent.Page2.Visible = true
+		script.Parent.Parent.Page1.Visible = false
+
+	end
+	coroutine.wrap(CHOSW_fake_script)()
+end)
+
+Upd.Name = "Upd"
+Upd.Parent = Main
+Upd.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Upd.BorderColor3 = Color3.fromRGB(43, 43, 43)
+Upd.BorderSizePixel = 2
+Upd.Position = UDim2.new(0, 0, 0.551004171, 0)
+Upd.Size = UDim2.new(0, 84, 0, 37)
+Upd.Font = Enum.Font.Merriweather
+Upd.Text = "Updates"
+Upd.TextColor3 = Color3.fromRGB(255, 255, 255)
+Upd.TextSize = 14.000
+Upd.MouseButton1Down:Connect(function()
+	local function KHMUHJN_fake_script() -- Upd.Script 
+		local script = Instance.new('Script', Upd)
+
+		script.Parent.Parent.Page3.Visible = true
+		script.Parent.Parent.Page2.Visible = false
+		script.Parent.Parent.Page1.Visible = false
+
+	end
+	coroutine.wrap(KHMUHJN_fake_script)()
+end)
+
+Page2.Name = "Page2"
+Page2.Parent = Main
+Page2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Page2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Page2.BorderSizePixel = 0
+Page2.Position = UDim2.new(0.283879787, 0, 0.0298177432, 0)
+Page2.Size = UDim2.new(0, 231, 0, 222)
+
+god.Name = "god"
+god.Parent = Page2
+god.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+god.BorderColor3 = Color3.fromRGB(66, 66, 66)
+god.BorderSizePixel = 2
+god.Position = UDim2.new(0.580086529, 0, 0.280314088, 0)
+god.Size = UDim2.new(0, 84, 0, 37)
+god.Font = Enum.Font.Merriweather
+god.Text = "God Mode"
+god.TextColor3 = Color3.fromRGB(255, 255, 255)
+god.TextSize = 20.000
+god.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/cypherdh/GodMode-V3/main/script"))()
+end)
+
+Aimlock.Name = "Aimlock"
+Aimlock.Parent = Page2
+Aimlock.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Aimlock.BorderColor3 = Color3.fromRGB(66, 66, 66)
+Aimlock.BorderSizePixel = 2
+Aimlock.Position = UDim2.new(0.580086529, 0, 0.514548302, 0)
+Aimlock.Size = UDim2.new(0, 84, 0, 37)
+Aimlock.Font = Enum.Font.Merriweather
+Aimlock.Text = "Lock (press Q on someone)"
+Aimlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimlock.TextScaled = true
+Aimlock.TextSize = 20.000
+Aimlock.TextWrapped = true
+Aimlock.MouseButton1Down:Connect(function()
+	local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro2/main/ui2"))()
+	local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
+	NotifyLib.prompt('Silent Lock - Q To Lock', 'Loading..', 5)
+	NotifyLib.prompt('Silent Lock', 'sup', 5)
+	NotifyLib.prompt('Silent Lock', 'zan#3931', 5)
+
+
+	Settings = {
+		rewrittenmain = {
+			Enabled = true,
+			Key = "q",
+			DOT = true,
+			AIRSHOT = true,
+			NOTIF = true,
+			AUTOPRED = true,
+			FOV = math.huge,
+			RESOVLER = true
+		}
+	}
+
+	local SelectedPart = "LowerTorso"
+	local Prediction = true
+	local PredictionValue = 0.11136642299
+
+
+	local AnchorCount = 0
+	local MaxAnchor = 50
+
+	local CC = game:GetService"Workspace".CurrentCamera
+	local Plr;
+	local enabled = false
+	local accomidationfactor = 0.115
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	local placemarker = Instance.new("Part", game.Workspace)
+
+	function makemarker(Parent, Adornee, Color, Size, Size2)
+		local e = Instance.new("BillboardGui", Parent)
+		e.Name = "PP"
+		e.Adornee = Adornee
+		e.Size = UDim2.new(Size, Size2, Size, Size2)
+		e.AlwaysOnTop = Settings.rewrittenmain.DOT
+		local a = Instance.new("Frame", e)
+		if Settings.rewrittenmain.DOT == true then
+			a.Size = UDim2.new(1, 0, 1, 0)
+		else
+			a.Size = UDim2.new(0, 0, 0, 0)
+		end
+		if Settings.rewrittenmain.DOT == true then
+			a.Transparency = 0
+			a.BackgroundTransparency = 0
+		else
+			a.Transparency = 1
+			a.BackgroundTransparency = 1
+		end
+		a.BackgroundColor3 = Color
+		local g = Instance.new("UICorner", a)
+		if Settings.rewrittenmain.DOT == false then
+			g.CornerRadius = UDim.new(0, 0)
+		else
+			g.CornerRadius = UDim.new(1, 1) 
+		end
+		return(e)
+	end
+
+
+	local data = game.Players:GetPlayers()
+	function noob(player)
+		local character
+		repeat wait() until player.Character
+		local handler = makemarker(guimain, player.Character:WaitForChild(SelectedPart), Color3.fromRGB(105, 105, 105), 0.3, 3)
+		handler.Name = player.Name
+		player.CharacterAdded:connect(function(Char) handler.Adornee = Char:WaitForChild(SelectedPart) end)
+
+
+		spawn(function()
+			while wait() do
+				if player.Character then
+				end
+			end
+		end)
+	end
+
+	for i = 1, #data do
+		if data[i] ~= game.Players.LocalPlayer then
+			noob(data[i])
+		end
+	end
+
+	game.Players.PlayerAdded:connect(function(Player)
+		noob(Player)
+	end)
+
+	spawn(function()
+		placemarker.Anchored = true
+		placemarker.CanCollide = false
+		if Settings.rewrittenmain.DOT == true then
+			placemarker.Size = Vector3.new(8, 8, 8)
+		else
+			placemarker.Size = Vector3.new(0, 0, 0)
+		end
+		placemarker.Transparency = 0.50
+		if Settings.rewrittenmain.DOT then
+			makemarker(placemarker, placemarker, Color3.fromRGB(105, 105, 105), 0.40, 0)
+		end
+	end)
+
+	game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(k)
+		if k == Settings.rewrittenmain.Key and Settings.rewrittenmain.Enabled then
+			if enabled == true then
+				enabled = false
+				if Settings.rewrittenmain.NOTIF == true then
+					Plr = getClosestPlayerToCursor()
+					game.StarterGui:SetCore("SendNotification", {
+						Title = "Lock";
+						Text = "Unlocked",
+						Duration = 3
+					})
+				end
+			else
+				Plr = getClosestPlayerToCursor()
+				enabled = true
+				if Settings.rewrittenmain.NOTIF == true then
+
+					game.StarterGui:SetCore("SendNotification", {
+						Title = "Lock";
+						Text = "Target: "..tostring(Plr.Character.Humanoid.DisplayName),
+						Duration = 3
+					})
+
+				end
+			end
+		end
+	end)
+
+
+
+	function getClosestPlayerToCursor()
+		local closestPlayer
+		local shortestDistance = Settings.rewrittenmain.FOV
+
+		for i, v in pairs(game.Players:GetPlayers()) do
+			if v ~= game.Players.LocalPlayer and v.Character and v.Character:FindFirstChild("Humanoid") and v.Character.Humanoid.Health ~= 0 and v.Character:FindFirstChild("HumanoidRootPart") then
+				local pos = CC:WorldToViewportPoint(v.Character.PrimaryPart.Position)
+				local magnitude = (Vector2.new(pos.X, pos.Y) - Vector2.new(mouse.X, mouse.Y)).magnitude
+				if magnitude < shortestDistance then
+					closestPlayer = v
+					shortestDistance = magnitude
+				end
+			end
+		end
+		return closestPlayer
+	end
+
+	local pingvalue = nil;
+	local split = nil;
+	local ping = nil;
+
+	game:GetService"RunService".Stepped:connect(function()
+		if enabled and Plr.Character ~= nil and Plr.Character:FindFirstChild("HumanoidRootPart") then
+			placemarker.CFrame = CFrame.new(Plr.Character.HumanoidRootPart.Position+(Plr.Character.HumanoidRootPart.Velocity*accomidationfactor))
+		else
+			placemarker.CFrame = CFrame.new(0, 9999, 0)
+		end
+		if Settings.rewrittenmain.AUTOPRED == true then
+			pingvalue = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
+			split = string.split(pingvalue,'(')
+			ping = tonumber(split[1])
+			if ping < 130 then
+				PredictionValue = 0.151
+			elseif ping < 125 then
+				PredictionValue = 0.149
+			elseif ping < 110 then
+				PredictionValue = 0.146
+			elseif ping < 105 then
+				PredictionValue = 0.138
+			elseif ping < 90 then
+				PredictionValue = 0.136
+			elseif ping < 80 then
+				PredictionValue = 0.134
+			elseif ping < 70 then
+				PredictionValue = 0.131
+			elseif ping < 60 then
+				PredictionValue = 0.1229
+			elseif ping < 50 then
+				PredictionValue = 0.1225
+			elseif ping < 40 then
+				PredictionValue = 0.1256
+			end
+		end
+	end)
+
+	local mt = getrawmetatable(game)
+	local old = mt.__namecall
+	setreadonly(mt, false)
+	mt.__namecall = newcclosure(function(...)
+		local args = {...}
+		if enabled and getnamecallmethod() == "FireServer" and args[2] == "UpdateMousePos" and Settings.rewrittenmain.Enabled and Plr.Character ~= nil then
+
+			-- args[3] = Plr.Character.HumanoidRootPart.Position+(Plr.Character.HumanoidRootPart.Velocity*accomidationfactor)
+            --[[
+            if Settings.rewrittenmain.AIRSHOT == true then
+                if game.Workspace.Players[Plr.Name].Humanoid:GetState() == Enum.HumanoidStateType.Freefall then -- Plr.Character:WaitForChild("Humanoid"):GetState() == Enum.HumanoidStateType.Freefall
+                    
+                    --// Airshot
+                    args[3] = Plr.Character.LeftFoot.Position+(Plr.Character.LeftFoot.Velocity*PredictionValue)
+
+                else
+                    args[3] = Plr.Character.HumanoidRootPart.Position+(Plr.Character.HumanoidRootPart.Velocity*PredictionValue)
+
+                end
+            else
+                    args[3] = Plr.Character.HumanoidRootPart.Position+(Plr.Character.HumanoidRootPart.Velocity*PredictionValue)
+            end
+            ]]
+			if Prediction == true then
+
+				args[3] = Plr.Character[SelectedPart].Position+(Plr.Character[SelectedPart].Velocity*PredictionValue)
+
+			else
+
+				args[3] = Plr.Character[SelectedPart].Position
+
+			end
+
+			return old(unpack(args))
+		end
+		return old(...)
+	end)
+
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if Settings.rewrittenmain.RESOVLER == true and Plr.Character ~= nil and enabled and Settings.rewrittenmain.Enabled then
+			if Settings.rewrittenmain.AIRSHOT == true and enabled and Plr.Character ~= nil then
+
+				if game.Workspace.Players[Plr.Name].Humanoid:GetState() == Enum.HumanoidStateType.Freefall then -- Plr.Character:WaitForChild("Humanoid"):GetState() == Enum.HumanoidStateType.Freefall
+
+					--// Airshot
+
+					--// Anchor Check
+
+					if Plr.Character ~= nil and Plr.Character.HumanoidRootPart.Anchored == true then
+						AnchorCount = AnchorCount + 1
+						if AnchorCount >= MaxAnchor then
+							Prediction = false
+							wait(2)
+							AnchorCount = 0;
+						end
+					else
+						Prediction = true
+						AnchorCount = 0;
+					end
+
+					SelectedPart = "LeftFoot"
+
+				else
+					--// Anchor Check
+
+					if Plr.Character ~= nil and Plr.Character.HumanoidRootPart.Anchored == true then
+						AnchorCount = AnchorCount + 1
+						if AnchorCount >= MaxAnchor then
+							Prediction = false
+							wait(2)
+							AnchorCount = 0;
+						end
+					else
+						Prediction = true
+						AnchorCount = 0;
+					end
+
+					SelectedPart = "HumanoidRootPart"
+
+				end
+			else
+
+				--// Anchor Check
+
+				if Plr.Character ~= nil and Plr.Character.HumanoidRootPart.Anchored == true then
+					AnchorCount = AnchorCount + 1
+					if AnchorCount >= MaxAnchor then
+						Prediction = false
+						wait(2)
+						AnchorCount = 0;
+					end
+				else
+					Prediction = true
+					AnchorCount = 0;
+				end
+
+				SelectedPart = "HumanoidRootPart"
+			end
+
+		else
+			SelectedPart = "HumanoidRootPart"
+		end
+	end)
+end)
+
+Teleport.Name = "Teleport"
+Teleport.Parent = Page2
+Teleport.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Teleport.BorderColor3 = Color3.fromRGB(66, 66, 66)
+Teleport.BorderSizePixel = 2
+Teleport.Position = UDim2.new(0.0519480519, 0, 0.514548302, 0)
+Teleport.Size = UDim2.new(0, 84, 0, 37)
+Teleport.Font = Enum.Font.Merriweather
+Teleport.Text = "Teleport Tool"
+Teleport.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleport.TextScaled = true
+Teleport.TextSize = 20.000
+Teleport.TextWrapped = true
+Teleport.MouseButton1Down:Connect(function()
+	mouse = game.Players.LocalPlayer:GetMouse()
+	tool = Instance.new("Tool")
+	tool.RequiresHandle = false
+	tool.Name = "Click Teleport"
+	tool.Activated:connect(function()
+		local pos = mouse.Hit+Vector3.new(0,2.5,0)
+		pos = CFrame.new(pos.X,pos.Y,pos.Z)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+	end)
+	tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+TextLabel.Parent = Page2
+TextLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0606060624, 0, 0.0135135129, 0)
+TextLabel.Size = UDim2.new(0, 203, 0, 23)
+TextLabel.Font = Enum.Font.TitilliumWeb
+TextLabel.Text = "Silent Set"
+TextLabel.TextColor3 = Color3.fromRGB(231, 231, 231)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Anims.Name = "Anims"
+Anims.Parent = Page2
+Anims.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Anims.BorderColor3 = Color3.fromRGB(66, 66, 66)
+Anims.BorderSizePixel = 2
+Anims.Position = UDim2.new(0.0519480519, 0, 0.280314088, 0)
+Anims.Size = UDim2.new(0, 84, 0, 37)
+Anims.Font = Enum.Font.Merriweather
+Anims.Text = "DH Animations"
+Anims.TextColor3 = Color3.fromRGB(255, 255, 255)
+Anims.TextScaled = true
+Anims.TextSize = 20.000
+Anims.TextWrapped = true
+Anims.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/nighter132/Faded/main/YesEpic", true))()
+end)
+
+Anims_2.Name = "Anims"
+Anims_2.Parent = Page2
+Anims_2.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Anims_2.BorderColor3 = Color3.fromRGB(66, 66, 66)
+Anims_2.BorderSizePixel = 2
+Anims_2.Position = UDim2.new(0.3160173, 0, 0.717251062, 0)
+Anims_2.Size = UDim2.new(0, 84, 0, 37)
+Anims_2.Font = Enum.Font.Merriweather
+Anims_2.Text = "Try Hard Animation"
+Anims_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Anims_2.TextScaled = true
+Anims_2.TextSize = 20.000
+Anims_2.TextWrapped = true
+Anims_2.MouseButton1Down:Connect(function()
+	while true do
+		local Animate = game.Players.LocalPlayer.Character.Animate
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=782841498"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=782841498"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616168032"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083218792"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083439238"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=707829716"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = false
+		wait(1)
+	end
+end)
+
+Page3.Name = "Page3"
+Page3.Parent = Main
+Page3.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Page3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Page3.BorderSizePixel = 0
+Page3.Position = UDim2.new(0.283879787, 0, 0.0298177432, 0)
+Page3.Size = UDim2.new(0, 231, 0, 222)
+Page3.Visible = false
+
+Released.Name = "Released"
+Released.Parent = Page3
+Released.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Released.BackgroundTransparency = 1.000
+Released.Position = UDim2.new(0.0216450226, 0, 0.405405402, 0)
+Released.Size = UDim2.new(0, 220, 0, 51)
+Released.Font = Enum.Font.SourceSansItalic
+Released.Text = "Last Updated: 8/28/2022"
+Released.TextColor3 = Color3.fromRGB(255, 255, 255)
+Released.TextScaled = true
+Released.TextSize = 14.000
+Released.TextWrapped = true
+
+Released_2.Name = "Released"
+Released_2.Parent = Page3
+Released_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Released_2.BackgroundTransparency = 1.000
+Released_2.Position = UDim2.new(0.0216450226, 0, 0.175675675, 0)
+Released_2.Size = UDim2.new(0, 220, 0, 51)
+Released_2.Font = Enum.Font.SourceSansItalic
+Released_2.Text = "Released: 8/28/2022"
+Released_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Released_2.TextScaled = true
+Released_2.TextSize = 14.000
+Released_2.TextWrapped = true
+
+Page1.Name = "Page1"
+Page1.Parent = Main
+Page1.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Page1.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Page1.BorderSizePixel = 0
+Page1.Position = UDim2.new(0.283879787, 0, 0.0298177432, 0)
+Page1.Size = UDim2.new(0, 231, 0, 222)
+Page1.Visible = false
+
+CREDITS.Name = "CREDITS"
+CREDITS.Parent = Page1
+CREDITS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CREDITS.BackgroundTransparency = 1.000
+CREDITS.Position = UDim2.new(0.0216450207, 0, 0.175675675, 0)
+CREDITS.Size = UDim2.new(0, 220, 0, 107)
+CREDITS.Font = Enum.Font.SourceSansItalic
+CREDITS.Text = "CREDITS TO: zan#3931 / jabobstersir"
+CREDITS.TextColor3 = Color3.fromRGB(255, 255, 255)
+CREDITS.TextScaled = true
+CREDITS.TextSize = 14.000
+CREDITS.TextWrapped = true
+
+elon.Name = "elon"
+elon.Parent = Page1
+elon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+elon.BorderSizePixel = 0
+elon.Position = UDim2.new(0.116883114, 0, 0.657657683, 0)
+elon.Size = UDim2.new(0, 175, 0, 65)
+elon.Image = "rbxassetid://3376159552"
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(-0.0746268779, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 120, 0, 17)
+TextLabel_2.Font = Enum.Font.PatrickHand
+TextLabel_2.Text = "Silent XIV"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
